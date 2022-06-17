@@ -14,8 +14,8 @@ public final class taksi extends JavaPlugin {
 
         this.getCommand("taksi").setExecutor(new CommandKit());
         this.getCommand("gn").setExecutor(new GN());
-        this.getCommand("hima").setExecutor(new hima());
-        this.getCommand("vanhahima").setExecutor(new vanhahima());
+        //this.getCommand("hima").setExecutor(new hima());
+        //this.getCommand("vanhahima").setExecutor(new vanhahima());
     }
 
     @Override
