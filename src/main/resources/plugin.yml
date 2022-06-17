@@ -1,0 +1,21 @@
+name: Taksi
+version: '${project.version}'
+main: com.jeffe.taksi
+api-version: 1.18
+authors: [ JEFFe ]
+description: Taksita himaa
+website: https://jeffe.co
+
+commands:
+  taksi:
+    description: Taksita himaa
+    usage: /taksi Jarkkovammainen
+  gn:
+    description: Nukuttaako?
+    usage: /gn kloppi
+  hima:
+    description: uusi hima?
+    usage: /hima
+  vanhahima:
+    description: vanha hima?
+    usage: /hima
