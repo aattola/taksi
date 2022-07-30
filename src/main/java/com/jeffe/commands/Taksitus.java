@@ -1,4 +1,4 @@
-package com.jeffe;
+package com.jeffe.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -7,9 +7,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.awt.print.Paper;
-
-public class CommandKit implements CommandExecutor {
+public class Taksitus implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {

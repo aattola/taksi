@@ -1,6 +1,5 @@
-package com.jeffe;
+package com.jeffe.commands;
 
-import net.kyori.adventure.audience.MessageType;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.command.Command;
@@ -8,7 +7,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class sadevittuun implements CommandExecutor {
+public class Sadevittuun implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {

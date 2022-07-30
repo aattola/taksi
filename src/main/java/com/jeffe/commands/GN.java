@@ -1,4 +1,4 @@
-package com.jeffe;
+package com.jeffe.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
