@@ -1,6 +1,6 @@
 name: Taksi
 version: '${project.version}'
-main: com.jeffe.Main
+main: com.jeffe.Taksi
 api-version: 1.18
 authors: [ JEFFe ]
 description: Taksita himaa

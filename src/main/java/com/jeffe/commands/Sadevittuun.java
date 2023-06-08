@@ -15,8 +15,7 @@ public class Sadevittuun implements CommandExecutor {
 
             World world = player.getWorld();
 
-            world.setTime(1);
-            world.setClearWeatherDuration(10000);
+            world.setClearWeatherDuration(100000);
             String viesti = ChatColor.BLUE + "" + ChatColor.BOLD + "[sadepois äkkiä] " + ChatColor.WHITE + "ukko " + player.getName() + " laitto sateen pois ja päivän";
             world.getPlayers().forEach(pl -> pl.sendMessage(viesti));
 
