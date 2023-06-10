@@ -12,7 +12,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-//import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public class Lagaanko implements CommandExecutor {
     private final Taksi plugin;
@@ -24,8 +24,8 @@ public class Lagaanko implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
 
-            Integer intti = player.getPing();
-            // @NotNull double[] tps = player.getServer().getTPS();
+            int intti = player.getPing();
+            double @NotNull [] tps = player.getServer().getTPS();
 
             TextComponent teksti = Component.text("Teksti josta voi näpäyttää").color(NamedTextColor.GREEN)
                     .clickEvent(ClickEvent.clickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/me orava"))
@@ -33,13 +33,9 @@ public class Lagaanko implements CommandExecutor {
 
             // serialize teksti and send it to player
 
-            this.plugin.adventure().player(player).sendMessage(teksti);
-
-            player.sendMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "[lagaanko?] " + ChatColor.WHITE + "meni rikki tämä tps hommeli niin en jaksanut korjaa. Pitää odottaa papermc versio 1.20. sit toimii taas.");
-
+            player.sendMessage(teksti);
+            player.sendMessage(ChatColor.BLUE + "" + ChatColor.BOLD + "[lagaanko?] " + ChatColor.WHITE + "TPS (alempi kuin 19 on huono) " + tps[0] + " pingi " + intti);
             return true;
-
-            //player.sendMessage(ChatColor.BLUE + "" + ChatColor.BOLD + "[lagaanko?] " + ChatColor.WHITE + "TPS (alempi kuin 19 on huono) " + tps[0] + " pingi " + intti);
         }
 
         return true;
