@@ -13,9 +13,12 @@ commands:
   gn:
     description: Nukuttaako?
     usage: /gn kloppi
-#  hima:
-#    description: uusi hima?
-#    usage: /hima
+  hima:
+    description: uusi hima?
+    usage: /hima
+  kylä:
+    description: uusi kylä?
+    usage: /kylä
   sadevittuun:
     description: sade pois?
     usage: /sadevittuun
