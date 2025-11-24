@@ -14,7 +14,7 @@ public class Hima implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
 
-            player.teleport(new Location(player.getServer().getWorld("world"), 1653, 120, -1594));
+            player.teleport(new Location(player.getServer().getWorld("world"), 1172, 119, -484));
             player.sendMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + "[Taksi] " + ChatColor.WHITE + "Matkustit kotiin taksi.ru palvelulla. Matka maksoi 5 ruplaa");
 
             return true;

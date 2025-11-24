@@ -8,10 +8,12 @@ plugins {
 }
 
 repositories {
-    mavenLocal()
     maven {
-        url = uri("https://papermc.io/repo/repository/maven-public/")
+        name = "papermc"
+        url = uri("https://repo.papermc.io/repository/maven-public/")
     }
+    mavenCentral()
+
 
     maven {
         url = uri("https://oss.sonatype.org/content/groups/public/")
@@ -24,13 +26,13 @@ repositories {
 
 dependencies {
     api("net.kyori:adventure-api:4.13.0")
-    compileOnly("io.papermc.paper:paper-api:1.19-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.21.10-R0.1-SNAPSHOT")
 }
 
 group = "taksi"
-version = "2.0.0"
+version = "2.0.1"
 description = "Taksi"
-java.sourceCompatibility = JavaVersion.VERSION_11
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 publishing {
     publications.create<MavenPublication>("maven") {
@@ -44,4 +46,8 @@ tasks.withType<JavaCompile>() {
 
 tasks.withType<Javadoc>() {
     options.encoding = "UTF-8"
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 }

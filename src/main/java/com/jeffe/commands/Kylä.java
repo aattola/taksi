@@ -14,8 +14,9 @@ public class Kylä implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
 
-            player.teleport(new Location(player.getServer().getWorld("world"), 1506, 82, -1830));
-            player.sendMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + "[Taksi] " + ChatColor.WHITE + "Matkustit kylään taksi.ru palvelulla. Pjotr kiittää! Matka maksoi 5 ruplaa + Z lisä eli 2 rublaa");
+            //player.teleport(new Location(player.getServer().getWorld("world"), 1506, 82, -1830));
+            //player.sendMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + "[Taksi] " + ChatColor.WHITE + "Matkustit kylään taksi.ru palvelulla. Pjotr kiittää! Matka maksoi 5 ruplaa + Z lisä eli 2 rublaa");
+            player.sendMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + "[Taksi] " + ChatColor.RED + "Kylä on remontissa.");
 
             return true;
         }
