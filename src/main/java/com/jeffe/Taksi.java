@@ -16,7 +16,12 @@ public final class Taksi extends JavaPlugin {
         this.getCommand("hima").setExecutor(new Hima());
         this.getCommand("kylä").setExecutor(new Kylä());
         //this.getCommand("vanhahima").setExecutor(new vanhahima());
+        this.getCommand("asetakoti").setExecutor(new AsetaKoti(this));
+        this.getCommand("koti").setExecutor(new Koti(this));
+
         this.getServer().getPluginManager().registerEvents(new KuolemaEvent(), this);
+
+        saveDefaultConfig();
     }
 
     @Override
