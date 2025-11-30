@@ -27,5 +27,6 @@ public final class Taksi extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+        saveConfig();
     }
 }

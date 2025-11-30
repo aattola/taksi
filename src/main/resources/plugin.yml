@@ -25,3 +25,9 @@ commands:
   lagaanko:
     description: lagaako servu?
     usage: /lagaanko
+  asetakoti:
+    description: Aseta koti
+    usage: /asetakoti
+  koti:
+    description: Teleporttaa kotiin
+    usage: /koti

@@ -30,7 +30,7 @@ dependencies {
 }
 
 group = "taksi"
-version = "2.0.2"
+version = "2.0.5"
 description = "Taksi"
 java.sourceCompatibility = JavaVersion.VERSION_21
 

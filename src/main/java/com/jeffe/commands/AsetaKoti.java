@@ -7,13 +7,12 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.Plugin;
 
 public class AsetaKoti implements CommandExecutor {
-    private final Plugin plugin;
+    private final Taksi plugin;
 
-    public AsetaKoti(Taksi plugin) {
-        this.plugin = plugin;
+    public AsetaKoti(Taksi ad) {
+        this.plugin = ad;
     }
 
     @Override
@@ -23,7 +22,7 @@ public class AsetaKoti implements CommandExecutor {
 
             Location location = player.getLocation();
             this.plugin.getConfig().set("koti." + player.getUniqueId(), location);
-            this.plugin.saveDefaultConfig();
+            this.plugin.saveConfig();
 
             player.sendMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + "[Taksi] " + ChatColor.WHITE + "Asetit kotisi!");
 
